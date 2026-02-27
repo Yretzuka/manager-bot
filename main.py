@@ -9,7 +9,8 @@ import random
 import asyncio
 
 # ===== BOT TOKEN =====
-TOKEN =
+import os
+TOKEN = os.environ.get('DISCORD_TOKEN')
 # ===== BOT SETUP =====
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='!', intents=intents)
